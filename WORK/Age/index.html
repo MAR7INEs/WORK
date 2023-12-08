@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+</head>
+<body>
+ <script>
+//1    
+// // تاریخ تولد کاربر را از ورودی دریافت می‌کنیم
+// var birthDate = prompt("تاریخ تولد خود را وارد کنید (YYYY-MM-DD):");
+// // تاریخ تولد کاربر را به شیء تاریخ تبدیل می‌کنیم
+// var birthDateObj = new Date(birthDate);
+// // تاریخ و زمان فعلی را دریافت می‌کنیم
+// var currentDate = new Date();
+// // محاسبه سن کاربر
+// var age = currentDate.getFullYear() - birthDateObj.getFullYear();
+// // بررسی اینکه آیا تاریخ تولد کاربر قبل از تاریخ و زمان فعلی است یا خیر
+// if (
+//   currentDate.getMonth() < birthDateObj.getMonth() ||
+//   (currentDate.getMonth() === birthDateObj.getMonth() &&
+//     currentDate.getDate() < birthDateObj.getDate())
+// ) {
+//   age--; // کاربر هنوز سن سالگی خود را نکرده است
+// }
+// // نمایش سن کاربر
+// alert("سن شما " + age + " سال است.");
+
+//2
+// // تاریخ جاری
+// var currentDate = new Date();
+// // تاریخ تولد کاربر (فرض بر این است که کاربر تاریخ تولد را وارد کرده است)
+// var userBirthDate = new Date("2004-04-25");
+// // محاسبه سن کاربر
+// var age = currentDate.getFullYear() - userBirthDate.getFullYear();
+// // بررسی اینکه آیا تاریخ تولد کاربر در تاریخ جاری گذشته است یا خیر
+// if (
+//   currentDate.getMonth() < userBirthDate.getMonth() ||
+//   (currentDate.getMonth() === userBirthDate.getMonth() &&
+//     currentDate.getDate() < userBirthDate.getDate())
+// ) {
+//   age--;
+// }
+// // چاپ سن کاربر
+// console.log("سن شما: " + age + " سال");
+
+//3
+// // Prompt the user to enter their birth year
+// var birthYear = prompt("Enter your birth year:");
+
+// // Calculate the current year
+// var currentYear = new Date().getFullYear();
+
+// // Calculate the user's age
+// var age = currentYear - birthYear;
+
+// // Print the user's age
+// console.log("Your age is: " + age);
+
+//4
+// // Prompt the user to enter their birth date
+// var birthDate = prompt("Enter your birth date (YYYY-MM-DD):");
+
+// // Calculate the current date
+// var currentDate = new Date();
+
+// // Parse the user's birth date
+// var userBirthDate = new Date(birthDate);
+
+// // Calculate the user's age in years
+// var ageInYears = currentDate.getFullYear() - userBirthDate.getFullYear();
+
+// // Check if the user's birth month and day have already occurred in the current year
+// var hasBirthdayOccurred =
+//   currentDate.getMonth() > userBirthDate.getMonth() ||
+//   (currentDate.getMonth() === userBirthDate.getMonth() &&
+//     currentDate.getDate() >= userBirthDate.getDate());
+
+// // Adjust the age if the user's birthday hasn't occurred yet this year
+// if (!hasBirthdayOccurred) {
+//   ageInYears--;
+// }
+
+// // Calculate the user's age in months
+// var ageInMonths =
+//   (currentDate.getMonth() + 12) -
+//   (userBirthDate.getMonth() + (hasBirthdayOccurred ? 0 : 1));
+
+// // Calculate the user's age in days
+// var ageInDays =
+//   (currentDate.getTime() - userBirthDate.getTime()) / (1000 * 60 * 60 * 24);
+
+// // Print the user's exact age
+// console.log(
+//   "Your age is: " +
+//     ageInYears +
+//     " years, " +
+//     ageInMonths +
+//     " months, and " +
+//     Math.floor(ageInDays) +
+//     " days."
+// );
+
+//5
+// // Prompt the user to enter their birth date
+// var birthDate = prompt("Enter your birth date (YYYY-MM-DD):");
+// // Calculate the current date
+// var currentDate = new Date();
+// // Parse the user's birth date
+// var userBirthDate = new Date(birthDate);
+// // Calculate the user's age in milliseconds
+// var ageInMilliseconds = currentDate.getTime() - userBirthDate.getTime();
+// // Convert the age to years
+// var ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+// // Calculate the number of leap years between the birth year and current year
+// var leapYears = 0;
+// for (var year = userBirthDate.getFullYear(); year < currentDate.getFullYear(); year++) {
+//   if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//     leapYears++;
+//   }
+// }
+// // Adjust the age by accounting for leap years
+// ageInYears -= leapYears / 365.25;
+// // Calculate the user's age in months
+// var ageInMonths = ageInYears * 12;
+// // Calculate the user's age in days
+// var ageInDays = ageInMilliseconds / (1000 * 60 * 60 * 24);
+// // Print the user's precise age
+// console.log(
+//   "Your age is: " +
+//     Math.floor(ageInYears) +
+//     " years, " +
+//     Math.floor(ageInMonths) +
+//     " months, and " +
+//     Math.floor(ageInDays) +
+//     " days."
+// );
+</script>   
+</body>
+</html>
