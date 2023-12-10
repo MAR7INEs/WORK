@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Perimeter</title>
+</head>
+<body>
+<script>
+//Area.1
+// // تابع محاسبه مساحت مستطیل
+// function calculateRectangleArea(length, width) {
+//   return length * width;
+// }
+
+// // تابع محاسبه مساحت مربع
+// function calculateSquareArea(side) {
+//   return side * side;
+// }
+
+// // تابع محاسبه مساحت دایره
+// function calculateCircleArea(radius) {
+//   return Math.PI * radius * radius;
+// } 
+// // محاسبه مساحت یک مستطیل با طول 5 و عرض 3
+// const rectangleArea = calculateRectangleArea(5, 3);
+// console.log(rectangleArea); // خروجی: 15
+
+// // محاسبه مساحت یک مربع با طول ضلع 4
+// const squareArea = calculateSquareArea(4);
+// console.log(squareArea); // خروجی: 16
+
+// // محاسبه مساحت یک دایره با شعاع 2
+// const circleArea = calculateCircleArea(2);
+// console.log(circleArea); // خروجی: حدود 12.57
+
+//Area.2
+// // تابع محاسبه مساحت مثلث
+// function calculateTriangleArea(base, height) {
+//   return (base * height) / 2;
+// }
+// // محاسبه مساحت یک مثلث با پایه 6 و ارتفاع 4
+// const triangleArea = calculateTriangleArea(6, 4);
+// console.log(triangleArea); // خروجی: 12
+
+//Area.3
+// // تابع محاسبه مساحت پارالل‌وگرام
+// function calculateParallelogramArea(base, height) {
+//   return base * height;
+// }
+// // محاسبه مساحت یک پارالل‌وگرام با پایه 8 و ارتفاع 5
+// const parallelogramArea = calculateParallelogramArea(8, 5);
+// console.log(parallelogramArea); // خروجی: 40
+
+//Area.4
+// // تابع محاسبه مساحت مثلث بر اساس طول سه ضلع
+// function calculateTriangleAreaBySides(a, b, c) {
+//   const s = (a + b + c) / 2; // نیمی از محیط مثلث
+//   const area = Math.sqrt(s * (s - a) * (s - b) * (s - c)); // فرمول هرن
+//   return area;
+// }
+// // محاسبه مساحت مثلث با طول ضلع‌های 5، 6 و 7
+// const triangleArea = calculateTriangleAreaBySides(5, 6, 7);
+// console.log(triangleArea); // خروجی: 14.696938456699069
+
+//Area.5
+// // تابع محاسبه مساحت پنج‌ضلع منتظم (پنتاگون)
+// function calculatePentagonArea(sideLength) {
+//   const apothem = sideLength / (2 * Math.tan(Math.PI / 5)); // اپوتم: فاصله از مرکز تا یکی از ضلع‌ها
+//   const area = (5 * sideLength * apothem) / 2; // فرمول محاسبه مساحت پنج‌ضلع منتظم
+//   return area;
+// }
+// // محاسبه مساحت پنج‌ضلع منتظم (پنتاگون) با طول ضلع 8
+// const pentagonArea = calculatePentagonArea(8);
+// console.log(pentagonArea); // خروجی: 110.11111890062518
+
+//Perimeter.1
+// // تابع محاسبه محیط مستطیل
+// function calculateRectanglePerimeter(length, width) {
+//   return 2 * (length + width);
+// }
+// // تابع محاسبه محیط مربع
+// function calculateSquarePerimeter(side) {
+//   return 4 * side;
+// }
+// // تابع محاسبه محیط دایره
+// function calculateCirclePerimeter(radius) {
+//   return 2 * Math.PI * radius;
+// }
+
+// // محاسبه محیط یک مستطیل با طول 5 و عرض 3
+// const rectanglePerimeter = calculateRectanglePerimeter(5, 3);
+// console.log(rectanglePerimeter); // خروجی: 16
+// // محاسبه محیط یک مربع با طول ضلع 4
+// const squarePerimeter = calculateSquarePerimeter(4);
+// console.log(squarePerimeter); // خروجی: 16
+// // محاسبه محیط یک دایره با شعاع 2
+// const circlePerimeter = calculateCirclePerimeter(2);
+// console.log(circlePerimeter); // خروجی: حدود 12.566370614359172
+
+//Perimeter.2
+// // تابع محاسبه محیط مثلث بر اساس طول سه ضلع
+// function calculateTrianglePerimeter(a, b, c) {
+//   return a + b + c;
+// }
+// // محاسبه محیط مثلث با طول ضلع‌های 5، 6 و 7
+// const trianglePerimeter = calculateTrianglePerimeter(5, 6, 7);
+// console.log(trianglePerimeter); // خروجی: 18
+
+//Perimeter.3
+// // تابع محاسبه محیط مستطیل
+// function calculateRectanglePerimeter(length, width) {
+//   return 2 * (length + width);
+// }
+// // محاسبه محیط مستطیل با طول 8 و عرض 5
+// const rectanglePerimeter = calculateRectanglePerimeter(8, 5);
+// console.log(rectanglePerimeter); // خروجی: 26
+
+// //Perimeter.4
+// // تابع محاسبه محیط دایره
+// function calculateCirclePerimeter(radius) {
+//   return 2 * Math.PI * radius;
+// }
+// // محاسبه محیط دایره با شعاع 4
+// const circlePerimeter = calculateCirclePerimeter(4);
+// console.log(circlePerimeter); // خروجی: حدود 25.132741228718345
+
+//Perimeter.5
+// // تابع محاسبه محیط مربع
+// function calculateSquarePerimeter(side) {
+//   return 4 * side;
+// }
+// // محاسبه محیط مربع با طول ضلع 6
+// const squarePerimeter = calculateSquarePerimeter(6);
+// console.log(squarePerimeter); // خروجی: 24
+</script>    
+</body>
+</html>
